@@ -1,10 +1,10 @@
-# wrapSync
+# wrap-sync
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/wrapsync.svg?style=flat-square)
-[![Build Status](http://img.shields.io/travis/Kikobeats/wrapsync/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/wrapsync)
-[![Dependency status](http://img.shields.io/david/Kikobeats/wrapsync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrapsync)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/wrapsync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrapsync#info=devDependencies)
-[![NPM Status](http://img.shields.io/npm/dm/wrapsync.svg?style=flat-square)](https://www.npmjs.org/package/wrapsync)
+![Last version](https://img.shields.io/github/tag/Kikobeats/wrap-sync.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/Kikobeats/wrap-sync/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/wrap-sync)
+[![Dependency status](http://img.shields.io/david/Kikobeats/wrap-sync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrap-sync)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/wrap-sync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrap-sync#info=devDependencies)
+[![NPM Status](http://img.shields.io/npm/dm/wrap-sync.svg?style=flat-square)](https://www.npmjs.org/package/wrap-sync)
 [![Gratipay](https://img.shields.io/gratipay/Kikobeats.svg?style=flat-square)](https://gratipay.com/~Kikobeats/)
 
 > Take a sync function and make it async, passing its return value to a callback. Based on [async#asyncify](https://github.com/caolan/async#asyncifyfunc) as module.
@@ -24,7 +24,7 @@ bower install wrap-sync --save
 and later link in your HTML:
 
 ```html
-<script src="bower_components/wrapsync/dist/wrap-sync.js"></script>
+<script src="bower_components/wrap-sync/dist/wrap-sync.js"></script>
 ```
 
 ## Usage
