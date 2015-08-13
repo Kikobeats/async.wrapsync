@@ -12,25 +12,25 @@
 ## Install
 
 ```bash
-npm install wrapsync --save
+npm install wrap-sync --save
 ```
 
 If you want to use in the browser (powered by [Browserify](http://browserify.org/)):
 
 ```bash
-bower install wrapsync --save
+bower install wrap-sync --save
 ```
 
 and later link in your HTML:
 
 ```html
-<script src="bower_components/wrapsync/dist/wrapsync.js"></script>
+<script src="bower_components/wrapsync/dist/wrap-sync.js"></script>
 ```
 
 ## Usage
 
 ```js
-var wrapSync = require('wrapsync');
+var wrapSync = require('wrap-sync');
 
 var parse = wrapSync(JSON.parse);
 
