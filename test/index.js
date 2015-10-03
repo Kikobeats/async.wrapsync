@@ -1,7 +1,25 @@
 'use strict';
 
+require('should');
+
 var wrapAsync = require('..');
-var should = require('should');
+var PinkyPromise = require('pinkie-promise');
+
+var resolvePromise = function(argument) {
+  return new PinkyPromise(function(resolve) {
+    setImmediate(function() {
+      resolve(argument + ' resolved');
+    });
+  });
+};
+
+var rejectPromise = function(argument) {
+  return new Promise(function(resolve, reject) {
+    setImmediate(function() {
+      reject(argument + ' rejected');
+    });
+  });
+};
 
 describe('wrapAsync ::', function() {
   it('simple wrap', function(done) {
@@ -53,5 +71,71 @@ describe('wrapAsync ::', function() {
       (e.message === 'callback error').should.be.equal(true);
       done();
     }
+  });
+
+  describe('standard promises support', function() {
+
+    [
+      'native-promise-only',
+      'bluebird',
+      'es6-promise',
+      'rsvp'
+    ].reduce(function(promises, name) {
+
+      var Promise = require(name);
+      if (typeof Promise.Promise === 'function') {
+        Promise = Promise.Promise;
+      }
+
+      promises[name] = {
+        resolve: function(test) {
+          var promisified = function(argument) {
+            return new Promise(function(resolve) {
+              setTimeout(function() {
+                resolve(argument + ' resolved');
+              }, 15);
+            });
+          };
+          wrapAsync(promisified)('argument', function(err, value) {
+            if (err) {
+              return test.done(new Error('should not get an error here'));
+            }
+            test.ok(value === 'argument resolved');
+            test.done();
+          });
+        },
+
+        reject: function(test) {
+          var promisified = function(argument) {
+            return new Promise(function(resolve, reject) {
+              reject(argument + ' rejected');
+            });
+          };
+          wrapAsync(promisified)('argument', function(err) {
+            test.ok(err);
+            test.ok(err.message === 'argument rejected');
+            test.done();
+          });
+        }
+      };
+      return promises;
+
+    }, {});
+
+    // it('resolve', function(done) {
+    //   wrapAsync(resolvePromise)('argument', function(err, value) {
+    //     (!err).should.be.equal(true);
+    //     (value === 'argument resolved').should.be.equal(true);
+    //     done();
+    //   });
+    // });
+
+    // it('reject', function(done) {
+    //   wrapAsync(promisified)('argument', function(err) {
+    //     (!!err).should.be.equal(true)
+    //     (err.message === 'argument rejected').should.be.equal(true);
+    //     done();
+    //   });
+    // });
   });
 });
