@@ -5,7 +5,7 @@
 [![Dependency status](http://img.shields.io/david/Kikobeats/wrap-sync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrap-sync)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/wrap-sync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrap-sync#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/wrap-sync.svg?style=flat-square)](https://www.npmjs.org/package/wrap-sync)
-[![Gratipay](https://img.shields.io/gratipay/Kikobeats.svg?style=flat-square)](https://gratipay.com/~Kikobeats/)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
 > Take a sync function and make it async, passing its return value to a callback. Based on [async#asyncify](https://github.com/caolan/async#asyncifyfunc) as module.
 

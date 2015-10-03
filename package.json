@@ -25,17 +25,22 @@
     "lodash.restparam": "~3.6.1"
   },
   "devDependencies": {
-    "browserify": "*",
-    "coffee-script": "*",
-    "coffeeify": "*",
-    "gulp": "*",
-    "gulp-header": "*",
-    "gulp-uglify": "*",
-    "gulp-util": "*",
-    "mocha": "*",
-    "should": "*",
-    "vinyl-buffer": "*",
-    "vinyl-source-stream": "*"
+    "bluebird": "latest",
+    "browserify": "latest",
+    "coffee-script": "latest",
+    "coffeeify": "latest",
+    "es6-promise": "latest",
+    "gulp": "latest",
+    "gulp-header": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "mocha": "latest",
+    "native-promise-only": "latest",
+    "pinkie-promise": "latest",
+    "rsvp": "latest",
+    "should": "latest",
+    "vinyl-buffer": "latest",
+    "vinyl-source-stream": "latest"
   },
   "engines": {
     "node": ">= 0.10.0",
