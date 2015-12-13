@@ -5,8 +5,8 @@
   "version": "1.0.1",
   "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": "Kikobeats/async.wrapsync",
@@ -15,12 +15,8 @@
   },
   "keywords": [
     "async",
-    "wrap",
-    "sync",
-    "wrapasync",
-    "module",
-    "asyncify",
-    "promise"
+    "async-modularized",
+    "wrapsync"
   ],
   "dependencies": {
     "lodash.isobject": "~3.0.2",

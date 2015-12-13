@@ -17,12 +17,8 @@
   },
   "keywords": [
     "async",
-    "wrap",
-    "sync",
-    "wrapasync",
-    "module",
-    "asyncify",
-    "promise"
+    "async-modularized",
+    "wrapsync"
   ],
   "ignore": [
     "**/.*",
