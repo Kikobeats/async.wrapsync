@@ -1,7 +1,16 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2015-12-13)
+
+
+* Update keywords ([99ab89c](https://github.com/kikobeats/async.wrapsync/commit/99ab89c))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2015-12-13)
 
 
+* 1.0.1 releases ([04e1f8a](https://github.com/kikobeats/async.wrapsync/commit/04e1f8a))
 * Refactor & Renamed ([5cf605e](https://github.com/kikobeats/async.wrapsync/commit/5cf605e))
 * Update bumped config ([a5f057d](https://github.com/kikobeats/async.wrapsync/commit/a5f057d))
 
