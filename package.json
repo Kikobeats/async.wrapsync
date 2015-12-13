@@ -1,7 +1,7 @@
 {
-  "name": "wrap-sync",
+  "name": "async.wrapsync",
   "description": "Take a sync function and make it async, passing its return value to a callback.",
-  "homepage": "https://github.com/Kikobeats/wrap-sync",
+  "homepage": "https://github.com/Kikobeats/async.wrapsync",
   "version": "1.0.0",
   "main": "./index.js",
   "author": {
@@ -9,14 +9,16 @@
     "email": "josefrancisco.verdu@gmail.com",
     "url": "https://github.com/Kikobeats"
   },
-  "repository": "Kikobeats/wrap-sync",
+  "repository": "Kikobeats/async.wrapsync",
   "bugs": {
-    "url": "https://github.com/Kikobeats/wrap-sync/issues"
+    "url": "https://github.com/Kikobeats/async.wrapsync/issues"
   },
   "keywords": [
     "async",
     "wrap",
     "sync",
+    "wrapasync",
+    "module",
     "asyncify",
     "promise"
   ],

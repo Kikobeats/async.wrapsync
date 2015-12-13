@@ -1,10 +1,10 @@
-# wrap-sync
+# async.wrapsync
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/wrap-sync.svg?style=flat-square)
-[![Build Status](http://img.shields.io/travis/Kikobeats/wrap-sync/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/wrap-sync)
-[![Dependency status](http://img.shields.io/david/Kikobeats/wrap-sync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrap-sync)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/wrap-sync.svg?style=flat-square)](https://david-dm.org/Kikobeats/wrap-sync#info=devDependencies)
-[![NPM Status](http://img.shields.io/npm/dm/wrap-sync.svg?style=flat-square)](https://www.npmjs.org/package/wrap-sync)
+![Last version](https://img.shields.io/github/tag/Kikobeats/async.wrapsync.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/Kikobeats/async.wrapsync/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/async.wrapsync)
+[![Dependency status](http://img.shields.io/david/Kikobeats/async.wrapsync.svg?style=flat-square)](https://david-dm.org/Kikobeats/async.wrapsync)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/async.wrapsync.svg?style=flat-square)](https://david-dm.org/Kikobeats/async.wrapsync#info=devDependencies)
+[![NPM Status](http://img.shields.io/npm/dm/async.wrapsync.svg?style=flat-square)](https://www.npmjs.org/package/async.wrapsync)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
 > Take a sync function and make it async, passing its return value to a callback. Based on [async#asyncify](https://github.com/caolan/async#asyncifyfunc) as module.
@@ -12,25 +12,25 @@
 ## Install
 
 ```bash
-npm install wrap-sync --save
+npm install async.wrapsync --save
 ```
 
 If you want to use in the browser (powered by [Browserify](http://browserify.org/)):
 
 ```bash
-bower install wrap-sync --save
+bower install async.wrapsync --save
 ```
 
 and later link in your HTML:
 
 ```html
-<script src="bower_components/wrap-sync/dist/wrap-sync.js"></script>
+<script src="bower_components/async.wrapsync/dist/async.wrapsync.js"></script>
 ```
 
 ## Usage
 
 ```js
-var wrapSync = require('wrap-sync');
+var wrapSync = require('async.wrapsync');
 
 var parse = wrapSync(JSON.parse);
 
